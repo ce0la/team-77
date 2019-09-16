@@ -70,3 +70,13 @@ button:hover {
 .message {
     color: #b3b3b3;
 }
+header nav{
+    float:right;
+    margin-top:-40px;
+
+}
+#team-list img{
+    height: 100px;
+    width: 100px;
+    border-radius: 60%;
+}
