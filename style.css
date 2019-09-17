@@ -8,7 +8,7 @@
 body {
     background: url(https://res.cloudinary.com/ce0la/image/upload/v1568617576/Landing_1_gdb1zg.png);
     background-position: center;
-    opacity: 0.4; 
+    opacity: 0.5; 
 }
 
 
@@ -32,6 +32,13 @@ label {
     font-weight: bold;
 }
 
+#signedin {
+    
+  
+   width: 10px;
+    text-align: left;   
+
+}
 input {
     margin-bottom: 20px;
     width: 80%;
@@ -42,26 +49,28 @@ input {
 }
 
 button {
-    border: 4px solid black;
+    border: 2px solid black;
     border-radius: 10px;
     padding: 10px;
     margin: 30px auto;
     width: 150px;
     font-size: 20px;
-    background: white;
+    background:  #667fe5 ;
+    
 }
 
 button:hover {
     cursor: pointer;
+    background-color:  #3354da  ;
 }
 
 
 .login {
-    width: 60%;
+    width: 30%;
     max-width: 50%;
     height: 100%;
-    background: #fff;
-    border-radius: 10px;
+    background-color: white;
+    border-radius: px;
     padding: 20px 40px;
     margin: 200px auto;
     text-align: center;
@@ -69,4 +78,59 @@ button:hover {
 
 .message {
     color: #b3b3b3;
+}
+
+/* styling for the icons */
+
+.input-icons i { 
+    position: relative; 
+} 
+  
+.input-icons { 
+    width: 30%; 
+    margin-bottom: 10px; 
+} 
+  
+.icon { 
+    padding: 10px; 
+    min-width: 40px; 
+} 
+  
+.input-field { 
+    width: 100%; 
+    padding: 10px; 
+    text-align: center; 
+} 
+
+/* @Oluscc added media queries for responsiveness on mobile devices*/
+
+@media all and (max-device-width: 480px) {
+
+    .login {
+        width: 70%;
+        max-width: 90%;
+        height: 100%;
+        background-color: white;
+        border-radius: 5px;
+        padding: 20px 10px;
+        margin: 200px auto;
+        text-align: center;
+    }
+
+    .input-field { 
+        width: 100%; 
+        padding: 5px; 
+        text-align: center; 
+    } 
+
+    button {
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 30px auto;
+        width: 60%;
+        font-size: 16px;
+        background:  #667fe5 ;        
+    }
+
 }
