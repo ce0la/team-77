@@ -145,7 +145,7 @@ a:hover {
 
 .features aside {
     width: 50%;
-    background: url(../img/features_img.png);
+    background: url(assets/img/features_img.png);
     background-repeat: no-repeat;
     background-position: 50% 117px;
     background-size: 580px 343px;
@@ -169,7 +169,7 @@ a:hover {
 
 .team {
     height: auto;
-    background: url(../img/team_bg.png);
+    background: url(assets/img/team_bg.png);
 }
 
 .team_header {
