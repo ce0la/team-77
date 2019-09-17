@@ -9,15 +9,27 @@
     <title>Sign In</title>
 </head>
 <body>
+    
 
-    <!-- <?php session_start();
-        $if(isset($_POST["Submit"])){
-            $logins = array("overlords" => "Hefe123", "team77" => "badass77", "Hefe77" => "ce0la");
-            $Username = isset($_POST["username"]) ? $_POST["username"] : "";
-            $Password = isset($_POST["password"]) ? $_POST["password"] : "";
+<?php
+session_start();
 
-        }
-    ?> -->
+$email="user";
+$password="password";
+
+if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true){
+    header("location: success.php");
+}
+if(isset($_POST["$email"]) && isset($_POST["$password"])) {
+    if ($_POST["email"] == $email && $_POST["$password"] == $password){
+        $_SESSION["loggedin"] == true;
+        header("Location: success.php");
+    }
+}
+?>
+
+
+
   
     <div class="login input-icons">
         <form action="#" method="POST">
