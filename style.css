@@ -1,106 +1,319 @@
 * {
-	margin: 0px; 
-	padding: 0px; 
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     line-height: 1.7;
 }
-
-body {
+header {
+    position: relative;
+    width: 100%;
+    height: 1080px;
     background: url(https://res.cloudinary.com/ce0la/image/upload/v1568617576/Landing_1_gdb1zg.png);
     background-position: center;
-    opacity: 0.5; 
+    opacity: ;
 }
 
-
-
-
-h1 {
-    color: rgb(163, 29, 163);
+nav {
+    position: fixed;
+    background: black;
+    width: 100%;
+    padding: 14px 141.2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
 }
 
-p, a {
-   font-size: 14px;
-   text-decoration: none;
+navbar a {
+    font-family: Rozha One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 34px;
+    color: #FFFFFF;
+    padding-left: 34px;
 }
 
-a:hover {
-    font-weight: bold;
-    
+navbar a:active {
+    color: #6E6161;
+}
+
+.register_box, .forget_password_password, .forget_password_email {
+    display: none;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 49px;
+
+    background: #FFFFFf;
+}
+
+.login h2 {
+    font-family: Rozha One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 68px;
+    text-align: center;
+    color: #000000;
+    padding-bottom: 82px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+input {
+    margin-bottom: 20px;
+    width: 700px;
+    height: 70px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    border-bottom: 1px solid #ddcfcf;
 }
 
 label {
-    font-weight: bold;
-}
-
-#signedin {
-    
-  
-   width: 10px;
-    text-align: left;   
-
-}
-input {
-    margin-bottom: 20px;
-    width: 80%;
-    padding: 10px;
-    border: 2px solid black;
-    border-radius: 10px;
-    /*border-bottom: 1px solid #ddcfcf;*/
+    font-family: Rozha One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 button {
-    border: 2px solid black;
-    border-radius: 10px;
+    font-family: Rozha One;
+    border: 4px solid #2B44FF;
+    border-radius: 15px;
     padding: 10px;
     margin: 30px auto;
-    width: 150px;
-    font-size: 20px;
-    background:  #667fe5 ;
-    
+    width: 228px;
+    height: 67px;
+    font-size: 24px;
+    line-height: 34px;
+    background: white;
 }
 
 button:hover {
     cursor: pointer;
-    background-color:  #3354da  ;
 }
 
+p,
+a {
+    text-decoration: none;
+}
 
-.login {
-    width: 30%;
-    max-width: 50%;
-    height: 100%;
-    background-color: white;
-    border-radius: px;
-    padding: 20px 40px;
-    margin: 200px auto;
+a:hover {
+    font-weight: bold;
+}
+
+.features {
+    height: 666px;
+    display: flex;
+    background: ;
+}
+
+.features main {
+    width: 50%;
+    padding-left: 72px;
+    padding-top: 140px;
+}
+
+.features main h2 {
+    width: 552px;
+    height: 68px;
+    font-family: Rozha One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 68px;
+    display: flex;
+    align-items: center;
     text-align: center;
 }
 
-.message {
-    color: #b3b3b3;
+.features main p {
+    width: 616px;
+    height: 104px;
+    font-family: Rozha One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
 }
 
-/* styling for the icons */
+.features aside {
+    width: 50%;
+    background: url(assets/img/features_img.png);
+    background-repeat: no-repeat;
+    background-position: 50% 117px;
+    background-size: 580px 343px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-itms: center;
+}
 
-.input-icons i { 
-    position: relative; 
-} 
-  
-.input-icons { 
-    width: 30%; 
-    margin-bottom: 10px; 
-} 
-  
-.icon { 
-    padding: 10px; 
-    min-width: 40px; 
-} 
-  
-.input-field { 
-    width: 100%; 
-    padding: 10px; 
-    text-align: center; 
-} 
+.features aside p {
+    position: rtive;
+    top: -40x;
+    font-family: Rozha One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 68px;
+    padding-top: 247px;
+    text-align: center;
+}
+
+.team {
+    height: auto;
+    background: url(assets/img/team_bg.png);
+}
+
+.team_header {
+    width: 393px;
+    height: 99px;
+    font-family: Rozha One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 68px;
+    text-align: center;
+    color: #2B44FF;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%)
+}
+
+.team_lead {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.team_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.col_1 {
+    width: 334px;
+    height: 489px;
+    display: flex;
+    flex-direction: column;
+    /*    justify-content: center;*/
+    align-items: center;
+}
+
+.team_img_box {
+    width: 246px;
+    height: 244px;
+    border: 1px solid #2B44FF;
+    box-sizing: border-box;
+    border-radius: 50%;
+    padding-top: 55px;
+}
+
+.team_name {
+    width: 316px;
+    height: 51px;
+    font-family: Rozha One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 51px;
+    text-align: center;
+}
+
+.team_role {
+    width: 120px;
+    height: 34px;
+    font-family: Rozha One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 34px;
+    color: #997659;
+}
+
+.team_social_icons {
+    display: flex;
+    justify-content: space-around;
+    font-size: 70px;
+    width: 324px;
+    height: 80px;
+}
+
+.fab,
+.fas {
+    color: black;
+}
+
+.fat {
+    color: #38A1F3
+}
+
+.circle {
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 45px;
+    padding: 10px;
+    position: relative;
+    top: -6px
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background: #000000;
+}
+
+footer h1 {
+    font-family: Rozha One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 68px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #B28B67;
+}
+
+footer p {
+    font-family: Rozha One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 51px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
 
 /* @Oluscc added media queries for responsiveness on mobile devices*/
 

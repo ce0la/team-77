@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Rozha+One&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-    <title>Sign In</title>
+    <script src="https://kit.fontawesome.com/e6f37f5b27.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js" integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+  crossorigin="anonymous"></script>
+    <title>Team 77 Login Page</title>
 </head>
 <body>
     <!-- <?php session_start();
@@ -18,26 +22,290 @@
         }
     ?> -->
   
-    <div class="login input-icons">
-        <form action="#" method="POST">
-          <!--<h1>Sign In</h1>-->
-             <i class="fa fa-envelope icon"></i>
-            <label for="email">Email/Username</label>
-            
-            <p><input id="email" name="email" type="email" placeholder="example@xyz.com" required/></p>
+     <header>
+        <nav class="nav">
+            <img src="assets/img/logo.png" alt="">
+            <navbar>
+                <a href="login.html">Home</a>
+                <a href="#features">Features</a>
+                <a href="#work">Work</a>
+                <a href="#team">Team</a>
+                <a href="#contact">Contact</a>
+            </navbar>
+        </nav>
 
-            <i class="fa fa-key icon"> 
-            </i> 
+    </header>
+    <section id="work" class="login">
+        
+        <div id="loginbox" class="loginbox">
+           <h2>Get Started</h2>
+            <form action="#" method="POST">
+                <!--<h1>Sign In</h1>-->
+                <label for="email">Email/Username</label>
+                <p><input id="email" name="email" type="email" placeholder="example@xyz.com" required /></p>
+                <label for="password">Password</label>
+                <p><input id="password" name="password" type="password" placeholder="minimum of 8 characters" pattern=".{8,}" required /></p>
+                <p><a href="#" id="show_forgot_password">Forgot Password?</a></p>
+                <button>Login</button>
+                <p class="message">Don't have an account? <a href="#register_box" id="show_register">Sign Up</a></p>
+            </form>
+        </div>
+        
+        <div id="register_box" class="register_box">
+           <h2>Sign Up</h2>
+            <form action="#" method="POST">
+                <!--<h1>Sign In</h1>-->
+                <!--                input 1-->
+                <label for="username">Username</label>
+                <p><input id="username" name="username" type="text" placeholder="Username" required /></p>
+                <!--                input 1-->
+                <label for="firstname">First Name</label>
+                <p><input id="firstname" name="firstname" type="text" placeholder="First Name" required /></p>
+                <!--                input 1-->
+                <label for="lastname">Last Name</label>
+                <p><input id="lastname" name="lastname" type="text" placeholder="lastname" required /></p>
+                <!--                input 1-->
+                <label for="email">Email</label>
+                <p><input id="email" name="email" type="email" placeholder="example@xyz.com" required /></p>
+                <!--                input 1-->
+                <label for="phonenumber">Phone Number</label>
+                <p><input id="phonenumber" name="phonenumber" type="number" placeholder="example@xyz.com" required /></p>
+                <!--                input 1-->
+                <!--                input 1-->
+                <label for="password">Password</label>
+                <p><input id="password" name="password" type="password" placeholder="minimum of 8 characters" pattern=".{8,}" required /></p>
+                    <!--                input 1-->
+                    <label for="confirm_password">Confirm Password</label>
+                    <p><input id="confirm_password" name="confirm_password" type="password" placeholder="minimum of 8 characters" pattern=".{8,}" required /></p>
+                    <!--                input 1-->
+                    <button>Sign up</button>
+                    <p class="message">Already have an account? <a href="#" id="show_login">Sign in</a></p>
+            </form>
+        </div>
 
-            <label for="password">Password</label>
-            <p><input id="password" name="password" type="password" placeholder="minimum of 8 characters" pattern=".{8,}" required/></p>
-            <p><input id="signedin"type="checkbox"> Keep me Signed in </p>
-            <p><a href="#">Forgot Password?</a></p>
-            <button>Login</button>
-           <!--<p class="message">Don't have an account? <a href="#" target="_blank">Sign Up</a></p>--> 
-           <p> </p>
-        </form>
-    </div>
+        <div class="forget_password_email">
+           <h2>Reset Password</h2>
+            <form action="#" method="POST">
+                <!--<h1>Sign In</h1>-->
+                <label for="email">Email/Username</label>
+                <p><input id="email" name="email" type="email" placeholder="example@xyz.com" required /></p>
+                <p>Go back to the <a href="#" id="goback_login">Login</a> page</p>
+                <button>Submit</button>
+            </form>
+        </div>
+
+        <div class="forget_password_password">
+           <h2>Reset Password</h2>
+            <form action="#" method="POST">
+
+                <!--                input 1-->
+                <label for="password">Password</label>
+                <p><input id="password" name="password" type="password" placeholder="minimum of 8 characters" pattern=".{8,}" required /></p>
+                    <!--                input 1-->
+                    <label for="confirm_password">Confirm Password</label>
+                    <p><input id="confirm_password" name="confirm_password" type="password" placeholder="minimum of 8 characters" pattern=".{8,}" required /></p>
+                    <!--                input 1-->
+                    <button>Sign up</button>
+                    <p class="message">Already have an account? <a href="#" target="_blank" onclick="register()">Reset Password</a></p>
+            </form>
+        </div>
+    </section>
+    <section id="features" class="features">
+        <main>
+            <h2>Modern Expert Solutions</h2>
+            <p>
+                Our team provide expert solutions towrds the HNG internship challenges We are a group of ten IT experts looking to make a difference in the word. Some of our what we have been upto can be seen on our lucid page. To get more insight please
+            </p>
+        </main>
+        <aside>
+            <p>77</p>
+        </aside>
+
+    </section>
+    <section id="team" class="team">
+        <div class="team_header">
+            <p>Meet The Team</p>
+        </div>
+        <!--       team lead starts here-->
+        <div class="team_lead">
+            <div class="col_1">
+                <div class="team_img_box">
+
+                </div>
+                <p class="team_name">Olaniyi Oshunbote</p>
+                <p class="team_role">Team Lead</p>
+                <span class="team_social_icons">
+                    <a href=""><i class="fab fa-github"></i></a>
+                    <a href=""><i class="fab fat fa-twitter"></i></a>
+                    <a href=""><i class="circle fas fa-phone-alt"></i></a>
+                </span>
+            </div>
+        </div>
+        <!--       team lead ends here-->
+        <!--       team role 1 starts here-->
+        <div class="team_row">
+            <div class="col_1">
+                <div class="team_img_box">
+
+                </div>
+                <p class="team_name">Olaniyi Oshunbote</p>
+                <p class="team_role">Team Lead</p>
+                <span class="team_social_icons">
+                    <a href=""><i class="fab fa-github"></i></a>
+                    <a href=""><i class="fab fat fa-twitter"></i></a>
+                    <a href=""><i class="circle fas fa-phone-alt"></i></a>
+                </span>
+            </div>
+            <!--           team col 1-->
+            <div class="col_1">
+                <div class="team_img_box">
+
+                </div>
+                <p class="team_name">Olaniyi Oshunbote</p>
+                <p class="team_role">Team Lead</p>
+                <span class="team_social_icons">
+                    <a href=""><i class="fab fa-github"></i></a>
+                    <a href=""><i class="fab fat fa-twitter"></i></a>
+                    <a href=""><i class="circle fas fa-phone-alt"></i></a>
+                </span>
+            </div>
+            <!--           team col 2-->
+            <div class="col_1">
+                <div class="team_img_box">
+
+                </div>
+                <p class="team_name">Olaniyi Oshunbote</p>
+                <p class="team_role">Team Lead</p>
+                <span class="team_social_icons">
+                    <a href=""><i class="fab fa-github"></i></a>
+                    <a href=""><i class="fab fat fa-twitter"></i></a>
+                    <a href=""><i class="circle fas fa-phone-alt"></i></a>
+                </span>
+            </div>
+            <!--           team col 3-->
+        </div>
+        <!--       team role 1 ends here-->
+        <!--       team role 2 starts here-->
+        <div class="team_row">
+            <div class="col_1">
+                <div class="team_img_box">
+
+                </div>
+                <p class="team_name">Olaniyi Oshunbote</p>
+                <p class="team_role">Team Lead</p>
+                <span class="team_social_icons">
+                    <a href=""><i class="fab fa-github"></i></a>
+                    <a href=""><i class="fab fat fa-twitter"></i></a>
+                    <a href=""><i class="circle fas fa-phone-alt"></i></a>
+                </span>
+            </div>
+            <!--           team col 1-->
+            <div class="col_1">
+                <div class="team_img_box">
+
+                </div>
+                <p class="team_name">Olaniyi Oshunbote</p>
+                <p class="team_role">Team Lead</p>
+                <span class="team_social_icons">
+                    <a href=""><i class="fab fa-github"></i></a>
+                    <a href=""><i class="fab fat fa-twitter"></i></a>
+                    <a href=""><i class="circle fas fa-phone-alt"></i></a>
+                </span>
+            </div>
+            <!--           team col 2-->
+            <div class="col_1">
+                <div class="team_img_box">
+
+                </div>
+                <p class="team_name">Olaniyi Oshunbote</p>
+                <p class="team_role">Team Lead</p>
+                <span class="team_social_icons">
+                    <a href=""><i class="fab fa-github"></i></a>
+                    <a href=""><i class="fab fat fa-twitter"></i></a>
+                    <a href=""><i class="circle fas fa-phone-alt"></i></a>
+                </span>
+            </div>
+            <!--           team col 3-->
+        </div>
+        <!--       team role 2 ends here-->
+        <!--       team role 3 starts here-->
+        <div class="team_row">
+            <div class="col_1">
+                <div class="team_img_box">
+
+                </div>
+                <p class="team_name">Olaniyi Oshunbote</p>
+                <p class="team_role">Team Lead</p>
+                <span class="team_social_icons">
+                    <a href=""><i class="fab fa-github"></i></a>
+                    <a href=""><i class="fab fat fa-twitter"></i></a>
+                    <a href=""><i class="circle fas fa-phone-alt"></i></a>
+                </span>
+            </div>
+            <!--           team col 1-->
+            <div class="col_1">
+                <div class="team_img_box">
+
+                </div>
+                <p class="team_name">Olaniyi Oshunbote</p>
+                <p class="team_role">Team Lead</p>
+                <span class="team_social_icons">
+                    <a href=""><i class="fab fa-github"></i></a>
+                    <a href=""><i class="fab fat fa-twitter"></i></a>
+                    <a href=""><i class="circle fas fa-phone-alt"></i></a>
+                </span>
+            </div>
+            <!--           team col 2-->
+            <div class="col_1">
+                <div class="team_img_box">
+
+                </div>
+                <p class="team_name">Olaniyi Oshunbote</p>
+                <p class="team_role">Team Lead</p>
+                <span class="team_social_icons">
+                    <a href=""><i class="fab fa-github"></i></a>
+                    <a href=""><i class="fab fat fa-twitter"></i></a>
+                    <a href=""><i class="circle fas fa-phone-alt"></i></a>
+                </span>
+            </div>
+            <!--           team col 3-->
+        </div>
+        <!--       team role 3 ends here-->
+
+
+    </section>
+    <footer id="contact">
+        <h1>Get in touch with Team 77</h1>
+        <p>Github</p>
+        <p>Lucid</p>
+    </footer>
     
+<script type="text/javascript">
+      $(function(){
+ $('#show_register').click(function(){
+        $('.loginbox').hide();
+        $('.register_box').show();
+        return false;
+    });
+$('#show_login').click(function(){
+        $('.loginbox').show();
+        $('.register_box').hide();
+        return false;
+    });
+});
+    $(function(){
+    $('#show_forgot_password').click(function(){
+        $('.forget_password_email').show();
+        $('.loginbox').hide();
+        return false;
+    });
+        $('#goback_login').click(function(){
+        $('.loginbox').show();
+        $('.forget_password_email').hide();
+        return false;
+    });
+        
+        });
+    </script>
 </body>
 </html>
