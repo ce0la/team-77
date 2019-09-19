@@ -29,6 +29,7 @@
     
             $jsonObject = json_encode($params);
             $json = file_get_contents('members-details.json');
+            
             if(empty($json)){
                 $jsonObject = json_encode(array('username' => [$jsonObject]));
                 file_put_contents('members-details.json', $jsonObject);
