@@ -10,7 +10,6 @@ header {
     height: 1080px;
     background: url(https://res.cloudinary.com/ce0la/image/upload/v1568617576/Landing_1_gdb1zg.png);
     background-position: center;
-    opacity: ;
 }
 
 nav {
@@ -28,10 +27,10 @@ navbar a {
     font-family: Rozha One;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 34px;
+    font-size: 20px;
+    line-height: 30px;
     color: #FFFFFF;
-    padding-left: 34px;
+    padding-left: 30px;
 }
 
 navbar a:active {
@@ -125,7 +124,6 @@ a:hover {
 .features {
     height: 666px;
     display: flex;
-    background: ;
 }
 
 .features main {
@@ -168,7 +166,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-itms: center;
+    /* align-itms: center; */
 }
 
 .features aside p {
@@ -286,7 +284,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 200px;
     background: #000000;
 }
 
@@ -294,8 +292,8 @@ footer h1 {
     font-family: Rozha One;
     font-style: normal;
     font-weight: normal;
-    font-size: 48px;
-    line-height: 68px;
+    font-size: 40px;
+    line-height: 60px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -306,8 +304,8 @@ footer p {
     font-family: Rozha One;
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
-    line-height: 51px;
+    font-size: 30px;
+    line-height: 50px;
     display: flex;
     align-items: center;
     text-align: center;
