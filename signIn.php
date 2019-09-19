@@ -1,12 +1,12 @@
 <?php
 // Functions to filter user inputs
-function filterEmail($field){
+function filterEmail($email){
     // Sanitize e-mail address
-    $field = filter_var(trim($field), FILTER_SANITIZE_EMAIL);
+    $field = filter_var(trim($email), FILTER_SANITIZE_EMAIL);
     
     // Validate e-mail address
-    if(filter_var($field, FILTER_VALIDATE_EMAIL)){
-        return $field;
+    if(filter_var($email, FILTER_VALIDATE_EMAIL)){
+        return $email;
     } else{
         return FALSE;
     }
@@ -30,7 +30,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         else {
             $email_split = explode("@", $email);
             $username = $email_split[0];
-            echo('<h1>Welcome </h1>' .$username);
+            echo("<h1>Welcome $username</h1> ");
         };
     }
 }
