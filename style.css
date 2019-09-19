@@ -15,23 +15,25 @@ header {
 
 nav {
     position: fixed;
-    background: black;
+    background:   #204863 ;
     width: 100%;
     padding: 14px 141.2px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
     z-index: 1000;
+    
 }
 
 navbar a {
     font-family: Rozha One;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 21px;
     line-height: 34px;
     color: #FFFFFF;
-    padding-left: 34px;
+    padding-left: 20px;
+    position: relative;
 }
 
 navbar a:active {
@@ -98,7 +100,7 @@ label {
 
 button {
     font-family: Rozha One;
-    border: 4px solid #2B44FF;
+    border: 4px solid #2a6d9b;
     border-radius: 15px;
     padding: 10px;
     margin: 30px auto;
@@ -197,7 +199,7 @@ a:hover {
     font-size: 48px;
     line-height: 68px;
     text-align: center;
-    color: #2B44FF;
+    color: #2a6d9b;
     position: relative;
     left: 50%;
     transform: translate(-50%)
@@ -227,7 +229,7 @@ a:hover {
 .team_img_box {
     width: 246px;
     height: 244px;
-    border: 1px solid #2B44FF;
+    border: 1px solid #2a6d9b;
     box-sizing: border-box;
     border-radius: 50%;
     padding-top: 55px;
