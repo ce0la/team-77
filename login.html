@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Rozha+One&display=swap" rel="stylesheet">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Rozha+One&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e6f37f5b27.js"></script>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.js" integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+    crossorigin="anonymous"></script>
     <link type="text/css" rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/e6f37f5b27.js"></script>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -12,17 +17,10 @@
   crossorigin="anonymous"></script>
     <title>Team 77 Login Page</title>
 </head>
-<body>
-    <!-- <?php session_start();
-        $if(isset($_POST["Submit"])){
-            $logins = array("overlords" => "Hefe123", "team77" => "badass77", "Hefe77" => "ce0la");
-            $Username = isset($_POST["username"]) ? $_POST["username"] : "";
-            $Password = isset($_POST["password"]) ? $_POST["password"] : "";
 
-        }
-    ?> -->
-  
-     <header>
+
+<body>
+    <header>
         <nav class="nav">
             <img src="assets/img/logo.png" alt="">
             <navbar>
@@ -33,27 +31,27 @@
                 <a href="#contact">Contact</a>
             </navbar>
         </nav>
-
     </header>
+
     <section id="work" class="login">
         
         <div id="loginbox" class="loginbox">
-           <h2>Get Started</h2>
-            <form action="#" method="POST">
+        <h2>Get Started</h2>
+            <form action="/signIn.php" method="POST">
                 <!--<h1>Sign In</h1>-->
-                <label for="email">Email/Username</label>
+                <label for="email">Email</label>
                 <p><input id="email" name="email" type="email" placeholder="example@xyz.com" required /></p>
                 <label for="password">Password</label>
                 <p><input id="password" name="password" type="password" placeholder="minimum of 8 characters" pattern=".{8,}" required /></p>
                 <p><a href="#" id="show_forgot_password">Forgot Password?</a></p>
-                <button>Login</button>
+                <input type="submit">
                 <p class="message">Don't have an account? <a href="#register_box" id="show_register">Sign Up</a></p>
             </form>
         </div>
         
         <div id="register_box" class="register_box">
-           <h2>Sign Up</h2>
-            <form action="#" method="POST">
+        <h2>Sign Up</h2>
+            <form action="/signUp.php" method="POST">
                 <!--<h1>Sign In</h1>-->
                 <!--                input 1-->
                 <label for="username">Username</label>
@@ -78,24 +76,24 @@
                     <label for="confirm_password">Confirm Password</label>
                     <p><input id="confirm_password" name="confirm_password" type="password" placeholder="minimum of 8 characters" pattern=".{8,}" required /></p>
                     <!--                input 1-->
-                    <button>Sign up</button>
+                    <input type="submit" value="Register">
                     <p class="message">Already have an account? <a href="#" id="show_login">Sign in</a></p>
             </form>
         </div>
 
         <div class="forget_password_email">
-           <h2>Reset Password</h2>
+        <h2>Reset Password</h2>
             <form action="#" method="POST">
                 <!--<h1>Sign In</h1>-->
                 <label for="email">Email/Username</label>
                 <p><input id="email" name="email" type="email" placeholder="example@xyz.com" required /></p>
-                <p>Go back to the <a href="#" id="goback_login">Login</a> page</p>
+                <p>Return to the <a href="#" id="goback_login">Login</a> page</p>
                 <button>Submit</button>
             </form>
         </div>
 
         <div class="forget_password_password">
-           <h2>Reset Password</h2>
+        <h2>Reset Password</h2>
             <form action="#" method="POST">
 
                 <!--                input 1-->
@@ -110,11 +108,12 @@
             </form>
         </div>
     </section>
+
     <section id="features" class="features">
         <main>
             <h2>Modern Expert Solutions</h2>
             <p>
-                Our team provide expert solutions towrds the HNG internship challenges We are a group of ten IT experts looking to make a difference in the word. Some of our what we have been upto can be seen on our lucid page. To get more insight please
+                Our team provides expert solutions towards the HNG internship challenges. We are a team of 10 IT Interns looking forward to making a difference in our world. Some of our what we have been upto can be seen on our lucid page. To get more insight please
             </p>
         </main>
         <aside>
@@ -122,7 +121,8 @@
         </aside>
 
     </section>
-    <section id="team" class="team">
+
+   <section id="team" class="team">
         <div class="team_header">
             <p>Meet The Team</p>
         </div>
