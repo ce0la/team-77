@@ -30,7 +30,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         else {
             $email_split = explode("@", $email);
             $username = $email_split[0];
-            echo("<h1>Welcome $username</h1> ");
+            echo("<h1>Welcome $username</h1>");
         };
     }
 }

@@ -29,7 +29,6 @@
     
             $jsonObject = json_encode($params);
             $json = file_get_contents('members-details.json');
-            
             if(empty($json)){
                 $jsonObject = json_encode(array('username' => [$jsonObject]));
                 file_put_contents('members-details.json', $jsonObject);
@@ -77,7 +76,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         else {
             $email_split = explode("@", $email);
             $username = $email_split[0];
-            echo("<h1>Welcome </h1> $username");
+            echo("<h1>Welcome $username</h1>");
         };
     }
 }
